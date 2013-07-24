@@ -45,15 +45,6 @@
   <label>Notes</label>
   <textarea name="NOTES" ng-model="tree.properties.NOTES"></textarea>
 
-  <!-- <div class="control-group" ng-class="{error: myForm.site.$invalid}">
-    <label>Website</label>
-    <input type="url" name="site" ng-model="tree.site" required>
-    <span ng-show="myForm.site.$error.required" class="help-inline">
-        Required</span>
-    <span ng-show="myForm.site.$error.url" class="help-inline">
-        Not a URL</span>
-  </div> -->
-
   <br>
   <a href="#/" class="btn">Cancel</a>
   <button ng-click="save()" ng-disabled="isClean() || myForm.$invalid"
