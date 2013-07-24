@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app="tree">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css" />    
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-resource.min.js">
+    </script>
+    <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+    <script src="http://firebase.github.io/angularFire/angularFire.js"></script>
+
+    <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+    <script src="../ng-leaflet-directive/dist/angular-leaflet-directive.min.js"></script>
+
+    <script src="projects.js"></script>
+    
+  </head>
+  <body>
+    <div class="container">
+      <h2>Heritage Trees</h2>
+      <div ng-view></div>
+    </div>
+  </body>
+</html>

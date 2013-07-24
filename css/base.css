@@ -1,0 +1,8 @@
+.angular-leaflet-map {
+    width: 100%;
+    height: 480px;
+    border: 1px solid;
+}
+.leaflet-popup-content {
+  text-align: center;
+}

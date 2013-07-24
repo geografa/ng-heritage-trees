@@ -1,0 +1,36 @@
+<input type="text" ng-model="search" class="search-query" placeholder="Search">
+<table>
+  <thead>
+  <tr>
+    <th>Tree ID</th>
+    <th>Common Name</th>
+    <th>Scientific Name</th>
+    <th>Address</th>
+    <th>Owner</th>
+    <th>Circumference (inches)</th>
+    <th>Diameter (inches)</th>
+    <th>Height (feet)</th>
+    <th>Notes</th>
+    <th><a href="#/new"><i class="icon-plus-sign"></i></a></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr ng-repeat="tree in trees | filter:search | orderBy:'properties.COMMON_NAM' | limitTo:10">
+    <td>{{tree.properties.TREEID}}</td>
+    <td>{{tree.properties.COMMON_NAM}}</td>
+    <td>{{tree.properties.SCIENTIFIC}}</td>
+    <td>{{tree.properties.ADDRESS}}</td>
+    <td>{{tree.properties.OWNER}}</td>
+    <td>{{tree.properties.CIRCUMFERE}}</td>
+    <td>{{tree.properties.DIAMETER}}</td>
+    <td>{{tree.properties.HEIGHT}}</td>
+    <td>{{tree.properties.NOTES}}</td>
+    <td>
+      <a href="#/edit/{{tree.$id}}"><i class="icon-pencil"></i></a>
+    </td>
+    <td>
+      <a href="#/map/{{tree.$id}}"><i class="icon-map-marker"></i></a>
+    </td>
+  </tr>
+  </tbody>
+</table>

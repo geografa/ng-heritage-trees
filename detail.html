@@ -1,0 +1,63 @@
+<form name="myForm">
+  <div class="control-group" ng-class="{error: myForm.properties.COMMON_NAM.$invalid}">
+    <label>Common Name</label>
+    <input type="text" name="common_name" ng-model="tree.properties.COMMON_NAM" required>
+    <span ng-show="myForm.properties.COMMON_NAM.$error.required" class="help-inline">
+        Required</span>
+  </div>
+
+  <label>Scientific Name</label>
+  <input name="SCIENTIFIC" ng-model="tree.properties.SCIENTIFIC"></input>
+ 
+  <label>Address</label>
+  <input name="ADDRESS" ng-model="tree.properties.ADDRESS"></input>
+
+  <label>Owner</label>
+  <input name="OWNER" ng-model="tree.properties.OWNER"></input>
+
+  <label>Circumference</label>
+  <input name="CIRCUMFERENCE" ng-model="tree.properties.CIRCUMFERE"></input>
+
+  <label>Diameter</label>
+  <input name="DIAMETER" ng-model="tree.properties.DIAMETER"></input>
+
+  <label>Height</label>
+  <input name="HEIGHT" ng-model="tree.properties.HEIGHT"></input>
+
+  <label>Spread</label>
+  <input name="SPREAD" ng-model="tree.properties.SPREAD"></input>
+
+  <label>Status</label>
+  <input name="STATUS" ng-model="tree.properties.STATUS"></input>
+
+  <label>Tree ID</label>
+  <input name="TREEID" ng-model="tree.properties.TREEID"></input>
+
+  <label>Year</label>
+  <input name="YEAR" ng-model="tree.properties.YEAR"></input>
+
+  <label>State ID</label>
+  <input name="STATEID" ng-model="tree.properties.STATEID"></input>
+
+  <label>OBJECTID</label>
+  <input name="OBJECTID" ng-model="tree.properties.OBJECTID"></input>  
+
+  <label>Notes</label>
+  <textarea name="NOTES" ng-model="tree.properties.NOTES"></textarea>
+
+  <!-- <div class="control-group" ng-class="{error: myForm.site.$invalid}">
+    <label>Website</label>
+    <input type="url" name="site" ng-model="tree.site" required>
+    <span ng-show="myForm.site.$error.required" class="help-inline">
+        Required</span>
+    <span ng-show="myForm.site.$error.url" class="help-inline">
+        Not a URL</span>
+  </div> -->
+
+  <br>
+  <a href="#/" class="btn">Cancel</a>
+  <button ng-click="save()" ng-disabled="isClean() || myForm.$invalid"
+          class="btn btn-primary">Save</button>
+  <button ng-click="destroy()"
+          ng-show="tree.$id" class="btn btn-danger">Delete</button>
+</form>
