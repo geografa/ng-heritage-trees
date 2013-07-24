@@ -1,0 +1,19 @@
+{
+  "name": "ng-heritage-trees",
+  "version": "0.0.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-firebase": "git://github.com/petebacondarwin/angular-firebase.git#~0.0.2",
+    "jquery": "git://github.com/components/jquery.git#~1.8.0",
+    "bootstrap": "http://twitter.github.com/bootstrap/assets/bootstrap.zip",
+    "angular": "~1.0.7",
+    "angular-resource": "~1.0.7",
+    "angular-leaflet": "~0.5.1"
+  }
+}
