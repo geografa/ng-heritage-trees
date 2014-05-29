@@ -5,4 +5,4 @@ An example of using Angular, Leaflet, and Firebase for mapping Heritage Trees in
 
 Using the Angular Leaflet Directive: <http://tombatossals.github.io/angular-leaflet-directive/>
 
-![](http://placedog.com/400/300)
+![](https://i.cloudup.com/a2drk4SNux.gif)
